@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0 auto;
+
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    background: #F8F8F8;
+}
+.primary-bg{
+    background: #E527B2;
+   
+}
+.disabledColor{
+    color: #ffffffc0 !important;
+}

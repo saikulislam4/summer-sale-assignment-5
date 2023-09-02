@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer-Sale </title>
+    <!-- font Awesome  -->
+    <script src="https://kit.fontawesome.com/b7f823b944.js" crossorigin="anonymous"></script>
+    <!-- daisyUi and tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header class="bg-[#F9F6E2]">
+        <!-- banner container -->
+        <section class="max-w-[1440px] px-4 lg:px-0 md:py-10 lg:py-0  grid grid-rows-1  md:grid-cols-2 items-center md:gap-8">
+            <!-- banner content -->
+            <section class="text-center mb-5 lg:mb-0 lg:px-6">
+                <h3 class="font-medium text-3xl mb-11">---SALE FEVER---</h3>
+                <h1 class="font-bold text-5xl lg:text-6xl">Purchase TK 200 or above & get <span
+                        class="text-[#E527B2]">20% off</span>
+                </h1>
+                <div class=" md:mt-16 md:flex justify-center items-center md:gap-4">
+                    <p class="my-2 md:my-0 font-medium text-xl lg:text-2xl">Use Promo Code</p>
+                    <h3
+                        class="w-full md:w-auto primary-bg py-3 px-6 rounded-md text-xl lg:text-2xl font-semibold text-white">
+                        SELL200</h3>
+                </div>
+            </section>
+            <!-- banner picture -->
+            <section class=" lg:my-20 order-[-1] md:order-1">
+                <img class="h-auto md:w-full  md:h-auto" src="images/Summer 1.png" alt="banner">
+            </section>
+        </section>
+    </header>
+
+    <main class="px-4 grid grid-cols-1 gap-4 mt-5 xl:flex xl:grid-cols-2 max-w-[1440px] lg:mt-32 ">
+        <!-- card container -->
+        <section class="w-full">
+            <!-- Kitchenware container -->
+            <section>
+                <h1 class="font-semibold text-[40px] mb-8 text-center lg:text-start">Kitchenware</h1>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-14">
+                    <!-- K. Accessories -->
+                    <section onclick="targetSection(this)" class="p-6 bg-white rounded-lg w-full ">
+                        <div class="p-6 bg-[#1111110D] rounded-lg">
+                            <img class="h-[150px] w-fit" src="images/prod1.png" alt="prod">
+                        </div>
+                        <div class="text-center mt-6 space-y-1 text-xl font-semibold ">
+                            <div class="text-center">
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-regular fa-star"></i>
+                                <i class="text-yellow-400 fa-regular fa-star"></i>
+                            </div>
+
+                            <h2>K. Accessories</h2>
+                            <h3 class="text-[#11111180]"><span id="test">39.00</span> TK</h3>
+                        </div>
+                    </section>
+                    <!-- Cheeseboard -->
+                    <section onclick="targetSection(this)" class="p-6  bg-white rounded-lg w-full ">
+                        <div class="p-6 bg-[#1111110D] rounded-lg">
+                            <img class="h-[150px] w-fit" src="images/prod2.png" alt="prod2">
+                        </div>
+                        <div class="text-center mt-6 space-y-1 text-xl font-semibold ">
+                            <div class="text-center">
+                                <i class="text-yellow-400 fa-regular fa-star"></i>
+                                <i class="text-yellow-400 fa-regular fa-star"></i>
+                                <i class="text-yellow-400 fa-regular fa-star"></i>
+                                <i class="text-yellow-400 fa-regular fa-star"></i>
+                                <i class="text-yellow-400 fa-regular fa-star"></i>
+                            </div>
+                            <h2>Cheeseboard</h2>
+                            <h3 class="text-[#11111180]"><span>25.00</span> TK</h3>
+                        </div>
+
+                    </section>
+                    <!-- Home Cooker -->
+                    <section onclick="targetSection(this)" class="p-6  bg-white rounded-lg w-full ">
+                        <div class="p-6 bg-[#1111110D] rounded-lg">
+                            <img class="h-[150px] w-fit" src="images/prod3.png" alt="prod3">
+                        </div>
+                        <div class="text-center mt-6 space-y-1 text-xl font-semibold ">
+                            <div class="text-center">
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-regular fa-star"></i>
+                            </div>
+                            <h2>Home Cooker</h2>
+                            <h3 class="text-[#11111180]"><span>49.00</span> TK</h3>
+                        </div>
+
+                    </section>
+                </div>
+
+            </section>
+            <!-- Sportswear container -->
+            <section>
+                <h1 class="font-semibold text-[40px] mb-8 text-center lg:text-start">Sportswear</h1>
+                <div class="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-14">
+                    <!-- Sports Back Cap -->
+                    <section onclick="targetSection(this)" class="p-6 bg-white rounded-lg w-full ">
+                        <div class="p-6 bg-[#1111110D] rounded-lg">
+                            <img class="h-[150px] w-fit" src="images/prod4.png" alt="prod4">
+                        </div>
+                        <div class="text-center mt-6 space-y-1 text-xl font-semibold ">
+                            <div class="text-center">
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-regular fa-star"></i>
+                                <i class="text-yellow-400 fa-regular fa-star"></i>
+                                <i class="text-yellow-400 fa-regular fa-star"></i>
+                            </div>
+                            <h2>Sports Back Cap</h2>
+                            <h3 class="text-[#11111180]"><span>39.00</span> TK</h3>
+                        </div>
+
+                    </section>
+                    <!-- Full Jersey Sets -->
+                    <section onclick="targetSection(this)" class="p-6 bg-white rounded-lg w-full ">
+                        <div class="p-6 bg-[#1111110D] rounded-lg">
+                            <img class="h-[150px] w-fit" src="images/prod5.png" alt="prod5">
+                        </div>
+                        <div class="text-center mt-6 space-y-1 text-xl font-semibold ">
+                            <div class="text-center">
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-regular fa-star"></i>
+                            </div>
+                            <h2>Full Jersey Sets</h2>
+                            <h3 class="text-[#11111180]"><span>69.00</span> TK</h3>
+                        </div>
+
+                    </section>
+                    <!-- Sports cates -->
+                    <section onclick="targetSection(this)" class="p-6 bg-white rounded-lg w-full ">
+                        <div class="p-6 bg-[#1111110D] rounded-lg">
+                            <img class="h-[150px] w-fit" src="images/prod6.png" alt="prod6">
+                        </div>
+                        <div class="text-center mt-6 space-y-1 text-xl font-semibold ">
+                            <div class="text-center">
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-regular fa-star"></i>
+                                <i class="text-yellow-400 fa-regular fa-star"></i>
+                            </div>
+                            <h2>Sports cates</h2>
+                            <h3 class="text-[#11111180]"><span>159.00</span> TK</h3>
+                        </div>
+
+                    </section>
+                </div>
+
+            </section>
+            <!-- Furniture container -->
+            <section>
+                <h1 class="font-semibold text-[40px] mb-8 text-center lg:text-start">Furniture</h1>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-14">
+                    <!--  Chair -->
+                    <section onclick="targetSection(this)" class="p-6 bg-white rounded-lg w-full ">
+                        <div class="p-6 bg-[#1111110D] rounded-lg">
+                            <img class="h-[150px] w-fit" src="images/prod7.png" alt="Chair">
+                        </div>
+                        <div class="text-center mt-6 space-y-1 text-xl font-semibold ">
+                            <div class="text-center">
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                            </div>
+                            <h2>Single Relax Chair</h2>
+                            <h3 class="text-[#11111180]"><span>185.00</span> TK</h3>
+                        </div>
+
+                    </section>
+                    <!--  Children play -->
+                    <section onclick="targetSection(this)" class="p-6 bg-white rounded-lg w-full ">
+                        <div class="p-6 bg-[#1111110D] rounded-lg">
+                            <img class="h-[150px] w-fit" src="images/prod8.png" alt="Children play">
+                        </div>
+                        <div class="text-center mt-6 space-y-1 text-xl font-semibold ">
+                            <div class="text-center">
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                            </div>
+                            <h2>Children play</h2>
+                            <h3 class="text-[#11111180]"><span>299.00</span> TK</h3>
+                        </div>
+
+                    </section>
+                    <!--  Flexible Sofa -->
+                    <section onclick="targetSection(this)" class="p-6 bg-white rounded-lg w-full ">
+                        <div class="p-6 bg-[#1111110D] rounded-lg">
+                            <img class="h-[150px] w-fit" src="images/prod9.png" alt="Flexible Sofa">
+                        </div>
+                        <div class="text-center mt-6 space-y-1 text-xl font-semibold ">
+                            <div class="text-center">
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                <i class="text-yellow-400 fa-regular fa-star"></i>
+                            </div>
+                            <h2>Flexible Sofa</h2>
+                            <h3 class="text-[#11111180]"><span>339.00</span> TK</h3>
+                        </div>
+
+                    </section>
+                </div>
+
+            </section>
+        </section>
+        <!-- cart  -->
+        <section class=" md:mt-24 mb-20 m-auto order-[-1] md:order-1">
+            <!-- coupon section -->
+            <div class=" bg-white p-5 rounded-md text-center lg:text-start  ">
+                <h2 class="text-xl lg:text-2xl font-medium capitalize mb-4">have a coupon?</h2>
+                <div class="md:flex">
+                    <input id="couponInput" class="py-2 p-4 w-full  border-2 border-[#584b4b29] outline-none text-xl "
+                        type="text" placeholder="Coupon code">
+                    <button id="applyBtn"
+                        class="disabledColor w-full md:w-auto primary-bg py-4 px-5 mt-4 md:mt-0 md:ml-[-15px] md:rounded-l-none  rounded-md text-xl font-semibold text-white"
+                        disabled>Apply</button>
+                </div>
+            </div>
+            <!-- cart item and button -->
+            <div class="relative bg-white p-2 px-4 lg:p-4 rounded-lg mt-6 lg:space-y-3 font-medium text-xl capitalize">
+                <!-- item container -->
+                <div id="itemContainer">
+
+                </div>
+                <hr class="my-5">
+                <!-- discount container -->
+                <div class="">
+                    <h2>total price: <span id="totalPrice" class="text-[#11111180]">00</span> <span
+                            class="text-[#11111180]">Taka</span></h2>
+                    <h2>discount: <span id="afterDiscount" class="text-[#11111180]">00</span> <span
+                            class="text-[#11111180]">Taka</span></h2>
+                    <h2>total: <span id="totalTaka" class="text-[#11111180]">00</span> <span
+                            class="text-[#11111180]">Taka</span></h2>
+
+                </div>
+                <hr class="my-10 lg:pb-8 ">
+                <button id="makePurchase"
+                    class=" disabledColor left-[50%]  translate-x-[-50%] translate-y-[-20px] absolute w-[88%] primary-bg py-3 px-6 rounded-md text-2xl font-semibold text-white"
+                    disabled onclick="my_modal_3.showModal(this)">Make Purchase</button>
+                <dialog id="my_modal_3" class="modal">
+                    <form method="dialog" class="modal-box text-center py-6 lg:py-24">
+                        <!-- <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button> -->
+                        <img src="images/congo.png" alt="">
+                        <h2 class="text-4xl lg:text-5xl font-bold mb-1 lg:mt-10 lg:mb-4">Congratulations</h2>
+                        <p class="py-4 text-xl text-[#11111180]">Your Purchase the product</p>
+
+                        <button
+                            class="w-full mt-10 md:w-auto primary-bg py-3 px-6 rounded-md text-xl font-semibold text-white">
+                            Go Home</button>
+                    </form>
+                </dialog>
+
+            </div>
+        </section>
+
+    </main>
+    <script src="JS/app.js"></script>
+</body>
+
+</html>
